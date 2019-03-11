@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinit3.Core", "Core\Infinit3.Core.csproj", "{8FC33561-CFE6-4A21-993F-EA3EA789589E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{CE871FCA-286B-42FA-A434-69BFC4F4CB62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinit3.Services.WindowCapturers.DesktopScreenCopy", "Services.WindowCapturers.DesktopScreenCopy\Infinit3.Services.WindowCapturers.DesktopScreenCopy.csproj", "{9CCC7B92-9C5F-4191-8619-3BF78407EFFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinit3.Services.KeyRecognisers.IronOcr", "Services.KeyRecognisers.IronOcr\Infinit3.Services.KeyRecognisers.IronOcr.csproj", "{241D84FA-9226-4A5A-A3F5-2453C8FDFD5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KeyRecognisers", "KeyRecognisers", "{644E9C3D-737F-4D21-AA99-FD3BA63156E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowCapturers", "WindowCapturers", "{EDFD9EEF-EEAA-4200-BEEE-AF39937DAFCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KeySenders", "KeySenders", "{6648DAE0-DCBD-4140-BA2C-626C1A99F047}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinit3.Services.KeySenders.ProcessSendMessage", "Services.KeySenders.ProcessSendMessage\Infinit3.Services.KeySenders.ProcessSendMessage.csproj", "{ACA2B43A-727B-4655-AC84-431E841AC1D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinit3.Services.KeySenders.WindowsFormsSendKeys", "Services.KeySenders.WindowsFormsSendKeys\Infinit3.Services.KeySenders.WindowsFormsSendKeys.csproj", "{73D16E8C-4223-486B-8A98-1DCD3EBF5DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinit3.Services.WindowCapturers.ProcessPrintWindow", "Services.WindowCapturers.ProcessPrintWindow\Infinit3.Services.WindowCapturers.ProcessPrintWindow.csproj", "{F299572E-0608-43AB-A60D-F1AC6290F25B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinit3.Application", "Application\Infinit3.Application.csproj", "{D6E32B47-627D-4AA3-9031-D29576C54BEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FC33561-CFE6-4A21-993F-EA3EA789589E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC33561-CFE6-4A21-993F-EA3EA789589E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC33561-CFE6-4A21-993F-EA3EA789589E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC33561-CFE6-4A21-993F-EA3EA789589E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CCC7B92-9C5F-4191-8619-3BF78407EFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CCC7B92-9C5F-4191-8619-3BF78407EFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CCC7B92-9C5F-4191-8619-3BF78407EFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CCC7B92-9C5F-4191-8619-3BF78407EFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241D84FA-9226-4A5A-A3F5-2453C8FDFD5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{241D84FA-9226-4A5A-A3F5-2453C8FDFD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{241D84FA-9226-4A5A-A3F5-2453C8FDFD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{241D84FA-9226-4A5A-A3F5-2453C8FDFD5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA2B43A-727B-4655-AC84-431E841AC1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA2B43A-727B-4655-AC84-431E841AC1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA2B43A-727B-4655-AC84-431E841AC1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA2B43A-727B-4655-AC84-431E841AC1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73D16E8C-4223-486B-8A98-1DCD3EBF5DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D16E8C-4223-486B-8A98-1DCD3EBF5DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D16E8C-4223-486B-8A98-1DCD3EBF5DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D16E8C-4223-486B-8A98-1DCD3EBF5DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F299572E-0608-43AB-A60D-F1AC6290F25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F299572E-0608-43AB-A60D-F1AC6290F25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F299572E-0608-43AB-A60D-F1AC6290F25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F299572E-0608-43AB-A60D-F1AC6290F25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E32B47-627D-4AA3-9031-D29576C54BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E32B47-627D-4AA3-9031-D29576C54BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E32B47-627D-4AA3-9031-D29576C54BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E32B47-627D-4AA3-9031-D29576C54BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9CCC7B92-9C5F-4191-8619-3BF78407EFFF} = {EDFD9EEF-EEAA-4200-BEEE-AF39937DAFCE}
+		{241D84FA-9226-4A5A-A3F5-2453C8FDFD5B} = {644E9C3D-737F-4D21-AA99-FD3BA63156E4}
+		{644E9C3D-737F-4D21-AA99-FD3BA63156E4} = {CE871FCA-286B-42FA-A434-69BFC4F4CB62}
+		{EDFD9EEF-EEAA-4200-BEEE-AF39937DAFCE} = {CE871FCA-286B-42FA-A434-69BFC4F4CB62}
+		{6648DAE0-DCBD-4140-BA2C-626C1A99F047} = {CE871FCA-286B-42FA-A434-69BFC4F4CB62}
+		{ACA2B43A-727B-4655-AC84-431E841AC1D6} = {6648DAE0-DCBD-4140-BA2C-626C1A99F047}
+		{73D16E8C-4223-486B-8A98-1DCD3EBF5DB6} = {6648DAE0-DCBD-4140-BA2C-626C1A99F047}
+		{F299572E-0608-43AB-A60D-F1AC6290F25B} = {EDFD9EEF-EEAA-4200-BEEE-AF39937DAFCE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEAD9DA3-E539-43C3-82BF-1E90706C8285}
+	EndGlobalSection
+EndGlobal

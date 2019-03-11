@@ -1,0 +1,82 @@
+﻿<Window x:Class="AlexNoddings.Infinit3.Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        DataContext="{Binding Main, Source={StaticResource Locator}}"
+        Title="Infinit3" Height="347.396" Width="252.244">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="5,0">
+            <GroupBox Header="Control" Padding="5,1">
+                <GroupItem>
+                    <StackPanel Orientation="Horizontal" Margin="0,2" HorizontalAlignment="Center">
+                        <Button Margin="4,0" Padding="4,0" Command="{Binding StartCommand}"
+                                IsEnabled="{Binding GameService.IsRunning, Converter={StaticResource BooleanInverterConverter}}">
+                            Start
+                        </Button>
+                        <Button Margin="4,0" Padding="4,0" Command="{Binding StopCommand}"
+                                IsEnabled="{Binding GameService.IsRunning}">
+                            Stop
+                        </Button>
+                    </StackPanel>
+                </GroupItem>
+            </GroupBox>
+            <GroupBox Header="Settings" Padding="5,1">
+                <GroupItem>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock>Window Capture Method</TextBlock>
+                            <RadioButton Margin="4,2" Padding="4,-2"
+                                         IsEnabled="{Binding GameService.IsRunning, Converter={StaticResource BooleanInverterConverter}}"
+                                         IsChecked="{Binding SettingsService.ShouldUseProcessPrintWindow}"
+                                         Content="Process Print Window" />
+                            <RadioButton Margin="4,2" Padding="4,-2"
+                                         IsEnabled="{Binding GameService.IsRunning, Converter={StaticResource BooleanInverterConverter}}"
+                                         IsChecked="{Binding SettingsService.ShouldUseDesktopScreenCopy}"
+                                         Content="Desktop Screenshot" />
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock>Key Send Method</TextBlock>
+                            <RadioButton Margin="4,2" Padding="4,-2"
+                                         IsEnabled="{Binding GameService.IsRunning, Converter={StaticResource BooleanInverterConverter}}"
+                                         IsChecked="{Binding SettingsService.ShouldUseProcessSendMessage}"
+                                         Content="Process Send Message" />
+                            <RadioButton Margin="4,2" Padding="4,-2"
+                                         IsEnabled="{Binding GameService.IsRunning, Converter={StaticResource BooleanInverterConverter}}"
+                                         IsChecked="{Binding SettingsService.ShouldUseWindowsFormsSendKeys}"
+                                         Content="Windows Forms Send Keys" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,2" HorizontalAlignment="Center">
+                            <Button Margin="4,0" Padding="4,0"
+                                    IsEnabled="{Binding GameService.IsRunning, Converter={StaticResource BooleanInverterConverter}}"
+                                    Command="{Binding SettingsService.SaveCommand}">
+                                Save
+                            </Button>
+                            <Button Margin="4,0" Padding="4,0"
+                                    IsEnabled="{Binding GameService.IsRunning, Converter={StaticResource BooleanInverterConverter}}"
+                                    Command="{Binding SettingsService.DiscardCommand}">
+                                Discard
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupItem>
+            </GroupBox>
+            <GroupBox Header="Status">
+                <GroupItem>
+                    <StackPanel Orientation="Vertical">
+                        <CheckBox Margin="4,2" Padding="4,-2" IsHitTestVisible="False"
+                                  IsChecked="{Binding GameService.IsRunning}" Content="Running" />
+                        <CheckBox Margin="4,2" Padding="4,-2" IsHitTestVisible="False"
+                                  IsChecked="{Binding GameService.IsKeySenderReady}" Content="Key Sender Ready" />
+                        <CheckBox Margin="4,2" Padding="4,-2" IsHitTestVisible="False"
+                                  IsChecked="{Binding GameService.IsWindowCapturerReady}"
+                                  Content="Window Capturer Ready" />
+                        <CheckBox Margin="4,2" Padding="4,-2" IsHitTestVisible="False"
+                                  IsChecked="{Binding GameService.CanSeeKey}" Content="Can See Key" />
+                    </StackPanel>
+                </GroupItem>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</Window>
